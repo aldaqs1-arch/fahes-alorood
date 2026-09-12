@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Deploy Worker
-        run: npx wrangler@3.90.0 deploy
+    run: npx wrangler@3.90.0 deploy worker.js --name dark-boat-3564 --compatibility-date 2026-09-10
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
